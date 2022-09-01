@@ -1,0 +1,18 @@
+Narine
+Surname  *
+Adamyan
+What is link to file? *
+Link  is a type of file in that reference to another file or a folder,using Inode unique identifier.
+What type of links we can create *
+soft-link , hard-link
+How to create link file? *
+ln -s filename link_filename
+What is Inode? *
+Index node, a structure that contains data (permission ,size, location )about the file,whenever it creates. Each file has the unique identifier.
+What type of the information is stored in the Inodes? *
+permission ,size, location, number of links, types
+What is the difference between hard and soft links? *
+soft links-is shortcuts, that can not be used without original file.Does not occupy the storage.
+hard links- is the same file, it can be more than one, and we can do any changes,and it does not affect to other links, or original file, even if we delete original file
+Where the Inodes are stored? *
+in the partitions

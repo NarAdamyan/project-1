@@ -1,0 +1,56 @@
+Narine Adamyan
+Ստեղծեք տեքստային ֆայլ, որի մեջ տեղադրեք հետևյալը՝ "Spring Summer Autumn Winter"։ Գրեք հրամաններ, որոնց օգնությամբ կկարողանաք "Spring Summer Autumn Winter"  տողից՝
+       1. տպել երրորդ բառը՝ Autumn,
+       2. փոխարինել այն AUTUMN-ով( մեծատառ )։
+ *
+touch seasons.txt
+echo $ Spring Summer Autumn Winter>>seasons.txt | sed "s/Autumn/AUTUMN/"
+Ի՞նչ է փոփոխականը։ Ի՞նչ տարբերություն կա սովորական, environment և special փոփոխականների միջև:
+ *
+when we export any variables such us x=7, it is an ordinary variable,that we can use in our script. Environmental variables saved in .bashrc, and can be changed manualy if we want it, but special variables are 8, and we can not do with it anything, we can use it and only read it value.
+Որոնք են bashrc, bash_profile, bash_history ֆայլերը։ *
+bash_history is a history of our commands, that save every command that we write.It helps us to find the command we need and reuse it by Ctrl R
+bash_profile is like a bashrc ,but bash_profile is opens when we login,and bashrc every time we use Shell.
+Shell-ի ի՞նչ տեսակներ կան: Ո՞ր հրամանի միջոցով կարող ենք տեսնել, ընթացիկ shell֊ի տեսակը եւ հասանելի shell-երի ցուցակը։ Ինչպե՞ս կարել է փոխել լռելյան shell֊ը մեկ այլ
+ հասանելի shell-ով։ *
+Types of shell-1. The Bourne Shell (sh) · 2. The GNU Bourne-Again Shell (bash) · 3. The C Shell (csh) · 4. The Korn Shell (ksh) · 5. The Z Shell (zsh).
+
+default shell- echo $SHELL, which shell
+types shell-cat /etc/shells
+change shell- chsh shelltype,
+
+Ո՞րն է source և ./ տարբերակներով bash script-ն աշխատեցնելու տարբերութունը։ *
+source can read none executable file  and only bash commands, but ./ must be executeble by  chmod +x
+Ո՞րն է "#!/bin/bash/" գրելու նպատակը՝ bash script֊ի առաջին տողում։
+Արդյո՞ք պարտադիր է նշել "#!/bin/bash/" մեկնաբանության տողը 
+(ցանկացած պատասխանի դեպքում նշեք թե ինչու)։ *
+To use Shell commands, it tells to use terminal for executing it. If we need only the  terminal to execute it is neccessory, but it can be a file where no any need to execute by terminal, as the commands can be the same and it can fail the process.
+Ինչպե՞ս կարելի է տեղափոխվել A/B/C պանակ՝
+       1. ամեն անգամ տերմինալ բացելուց,
+       2. տերմինալից մեկ հրաման աշխատեցնելու միջոցով։
+
+Բերել ամեն մեկից մեկական օրինակ։
+ *
+echo $ cd A/B/C>> ./.bashrc
+cd A/B/C
+Ինչպե՞ս կարելի է ստեղծել environment փոփոխական, որը հասանելի կլինի ամեն անգամ տերմինալ բացելուց։ *
+open ~/.bashrc
+write a  command
+source in bashrc
+echo $ MyVar in terminal
+Ինչի՞ համար է $PATH environment փոփոխականը։ Ինչպե՞ս կարելի է փոխել $PATH environment փոփոխականի արժեքը՝ պահպանելով հին արժեքը։ Բերել օրինակ: *
+It is a way that helps to find the command we need., OS searches the commands by PATHs We can export a path and change it.
+export path=$PATH:/new path
+Ինչպե՞ս կարելի է առանձնացնել հրամանի error message-ը  և նորմալ արդյունքը առանձին ֆայլերում։ Բերել օրինակներ։ *
+ls erorcommand 2> stderr.txt:
+ls command  > stdout.txt:
+both ls command &> stdoutandstderr.txt
+Նշել $n, $@, $*, $?, $# եւ $! special variable-ների նշանակությունները։
+ *
+$n-command line for n argument(0 is itself)
+
+
+$*-Stores all the command line arguments by joining them together.
+$?-exit status of last command
+$#-Stores all the command line arguments by joining them together.
+$!-the last background command.

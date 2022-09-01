@@ -1,0 +1,63 @@
+Narine Adamyan
+What is VIM? *
+3 из 0
+Vim is a text editor for creating text file.It allows to work faster by automating any steps, without using mouse. 
+Enumerate the operation modes in VIM. *
+2 из 0
+Normal mode
+Visual mode
+Command-line mode
+Replace mode
+What are the motion commands in normal mode? *
+4 из 0
+H-left
+J-down
+K-up
+L-right
+How to copy&paste, cut&paste word in normal mode? *
+4 из 0
+Place the cursor on the word we want to yank pres yw, (yank word) then P-(for before cursor), p-(for after cursor) paste
+How to copy&paste, cut&paste line in normal mode? *
+4 из 0
+Place the cursor on the begin  of the line, press Y or yy and P-(for before cursor), p-(for after cursor) pastie.   
+How to repeat the same command multiple times in normal mode? Show an example to delete some amount of words. *
+6 из 0
+to combine a number to a command, for example to delete a word command is dw but if we want to delete multiple command d7w
+Enumerate the ways to enter to insert mode. *
+6 из 0
+i    Insert text before the cursor
+I    Insert text before the first character of the line
+a    Append text after the cursor
+A    Append text at the end of line
+o    Starts from beginning next new line
+O    Starts from beginning previous line
+What actions insert mode is used for? *
+7 из 0
+Insert mode is the default mode,that allow to edit the text .
+How to autocomplete the word in insert mode? How does VIM decide which word to suggest? *
+8 из 0
+Ctrl+n
+Enumerate the ways to enter replace mode. *
+8 из 0
+If we want to replace a letter must replace the cursor on the letter and pres r in normal mood, then replace the letter or symbol we want.If we need to do it by multiple letters press SHIFT R, then replace the symbols.
+What actions replace mode is used for? *
+6 из 0
+To type a text by replacing existing text.
+How to move the cursor to the top and bottom lines in the normal mode? *
+6 из 0
+gg- top
+Shift g-bottom
+How to select a line in VIM? *
+6 из 0
+Shift v
+How to select a column in VIM? *
+in normal mode press v  for visual mode and dd, or SHIFT v for visual line and d
+How to enable the option to show line numbers in VIM? *
+6 из 0
+:set number
+How to search a word in VIM? *
+6 из 0
+in normal mode :set hlsearch , /searching word
+How to go to the next and previous occurrences of the searched word? *
+6 из 0
+:n (next word), :N (previous word)

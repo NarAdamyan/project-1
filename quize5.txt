@@ -1,0 +1,30 @@
+naradamyan995@gmail.com
+Name *
+Narine
+Surname
+ *
+Adamyan
+1. What are ip address classes and difference between them.
+ *
+An IP adress is a numerical label, that is unique number that connect device to a computer network. It consists from 4 number, each number 3 digit and they separated for dot(.).5 types of IP address classes. IP class A(1-127),used for large number of hosts,nearly 16.000.000, IP class B(128-191) used for medium size network, IP size C(192-223)used for local area network(LAN), IP Class D used for multitasking, IP class E for research and Development Purposes.
+2. Difference between dynamic and static ip address.
+ *
+Dynamic ip address is a standart address that change every time,when we change the network, while the static IP address, the address does not change.
+3. Difference between public and private ip address.
+ *
+Privite IP is a free address that can be used by the other device, when you disconnected, but the public IP is not free, and a unique  code that can  never be reused by other devices.A private IP address is used within a private network to connect securely to other devices.But in public IP all information that I have in network,can be reached and not secure.
+4. What is gateway.
+ *
+Gateway is a hardware , that connected one network protocols to another.The request or data traffic does through the gateway.
+5. What is netmask.
+ *
+Netmask is manages the 32 binary bits, taht separated in 4 parts.A subnet allows to change octets right to left.IF after the Ip adress is written/22, can be changed only last octet and 2 point from second part.
+6. What is broadcast.
+ *
+Broadcast is a distribution pakage to a numerous IP at the same time.
+7. What is proxy server.
+ *
+The proxy is a systmiddle server  between user and internet. It allow to send  request and not to be be identificated.Proxy server let to save confidential information if we need.
+8. What is DNS.
+ *
+Domain name server that connect the IP adress to the name of page. It allows to find our request by the name, DNS research wich IP is corresponding to the object that we serach and receive the page we need.
